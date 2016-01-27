@@ -36,7 +36,7 @@ vagrantfile:
         synced_folder:
             vflsf_pvw02bnltaq8:
                 source: 'c:\Users\gtieri\MisProjectos\prueba\'
-                target: /var/www/prueba/
+                target: /var/www/html/prueba/
                 sync_type: default
                 smb:
                     smb_host: ''
@@ -177,7 +177,7 @@ apache:
             servername: prueba.dev
             serveraliases:
                 - www.prueba.dev
-            docroot: /var/www/prueba/public
+            docroot: /var/www/html/prueba/public
             port: '80'
             setenv:
                 - 'APP_ENV dev'
@@ -193,7 +193,7 @@ apache:
             ssl_cipher: ''
             directories:
                 avd_8tkkmyfx06m7:
-                    path: /var/www/prueba/public
+                    path: /var/www/html/prueba/public
                     options:
                         - Indexes
                         - FollowSymlinks

@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
-
+Route::get('/', 'HomeController@index');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
